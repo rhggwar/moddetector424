@@ -1,0 +1,58 @@
+local mod = {
+ 4752032573,
+ 2422032228,
+ 2395613299,
+ 149290866,
+ 30586516,
+ 1884202010,
+ 4969374172,
+ 4653413083,
+ 84570351,
+ 3018319587,
+ 154370645,
+ 2212830051,
+ 29242182,
+ 2598041621,
+ 99356639,
+ 3944434729,
+ 8195210,
+ 3934559413,
+ 1439879181,
+ 38633755,
+ 328566086,
+ 2879356349,
+ 60851328,
+ 5348287604,
+ 1391585577,
+ 2407503963,
+ 1993619246,
+ 118842399,
+ 999511943,
+ 4932403585,
+ 89473551,
+ 5136267958,
+ 228204181,
+ 752396154,
+ 2269987434,
+ 135885527,
+ 542488819,
+ 773554987,
+ 3634544709,
+}
+
+for l, c in pairs(game.Players:GetChildren()) do
+for i, v in pairs(mod) do
+if c.UserId == v then
+local Vanis = game.Players.LocalPlayer
+Vanis:Kick("hi it roger u get kick cuz mod")
+end
+end
+end
+game.Players.PlayerAdded:Connect(function(plr)
+for i, v in pairs(mod) do
+if plr.UserId == v then
+local Vanis = game.Players.LocalPlayer
+Vanis:Kick("Mod Detected")
+end
+end
+end)
